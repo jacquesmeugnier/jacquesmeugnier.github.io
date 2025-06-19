@@ -221,6 +221,12 @@ footer {
 
 /* --- Responsive pour mobile --- */
 @media (max-width: 768px) {
+    
+    #hero {
+        background-image: url('images/mobile-background.jpg');
+        background-attachment: scroll;
+    }
+
     #hero h1 { font-size: 2.8rem; }
     h2 { font-size: 2rem; }
     #hero nav { display: flex; flex-direction: column; }
