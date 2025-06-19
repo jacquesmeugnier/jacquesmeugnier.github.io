@@ -118,7 +118,9 @@ h2 {
 }
 
 /* --- Section Biographie --- */
-#bio { padding-top: 100px; }
+#bio { 
+    /* Le padding est déjà dans la règle "section" générale */
+}
 .bio-content {
     display: flex;
     align-items: center;
@@ -161,8 +163,8 @@ h2 {
 .caption h3 { margin: 0 0 5px 0; font-family: var(--font-title); font-size: 1.5rem; }
 .caption p { margin: 0; font-size: 0.9rem; }
 
-/* --- NOUVEAUX STYLES : Section Expositions Compacte --- */
-#expositions { background-color: white; }
+/* --- Section Expositions --- */
+#expositions { background-color: var(--bg-color); }
 .expos-columns {
     column-count: 2;
     column-gap: 40px;
@@ -173,13 +175,13 @@ h2 {
 .expo-entry {
     margin-bottom: 15px;
     font-size: 1rem;
-    break-inside: avoid-column; /* Empêche les coupures au milieu d'une entrée */
+    break-inside: avoid-column;
 }
 .expo-entry .expo-date {
     font-weight: 500;
     color: #333;
     display: inline-block;
-    width: 65px; /* Aligne les dates */
+    width: 120px; 
 }
 .expo-entry .expo-gallery {
     font-weight: 500;
@@ -188,8 +190,26 @@ h2 {
     color: #777;
 }
 
+/* --- SECTION ÉCRITURE --- */
+#ecriture { 
+    background-color: white; 
+    /* La section hérite du padding: 80px 0; par défaut */
+}
+.ecriture-content {
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+.ecriture-content p {
+    margin-bottom: 1.5rem;
+    text-align: justify; 
+}
+
+
 /* --- Section Contact --- */
-#contact { text-align: center; }
+#contact { 
+    text-align: center;
+    background-color: var(--bg-color);
+}
 .contact-list { list-style-type: none; padding: 0; margin-top: 30px; font-size: 1.1rem; }
 .contact-list li { margin-bottom: 15px; }
 .contact-list a { color: var(--primary-color); text-decoration: none; font-weight: 500; }
@@ -219,6 +239,7 @@ footer {
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 @keyframes zoomIn { from { transform: scale(0.8); } to { transform: scale(1); } }
 
+
 /* --- Responsive pour mobile --- */
 @media (max-width: 768px) {
     
@@ -235,7 +256,6 @@ footer {
     .bio-content { flex-direction: column; text-align: center; }
     .bio-photo { width: 250px; margin-bottom: 20px; }
     
-    /* Passe la liste des expos sur une seule colonne */
     .expos-columns {
         column-count: 1;
     }
