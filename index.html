@@ -8,7 +8,6 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- POLICE LORA AJOUTÉE ICI -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400&family=Playfair+Display:wght@700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
@@ -23,6 +22,7 @@
                 <a href="#bio">Biographie</a>
                 <a href="#galerie">Galerie</a>
                 <a href="#expositions">Expositions</a>
+                <a href="#ecriture">Écriture</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
@@ -32,18 +32,20 @@
     </header>
 
     <main>
-        <!-- SECTION BIOGRAPHIE -->
-        <section id="bio" class="container">
-            <h2>Biographie</h2>
-            <div class="bio-content">
-                <img src="images/artiste.jpg" alt="Photo de Jacques Meugnier dans son atelier" class="bio-photo">
-                <div class="bio-text">
-                    <p>Jacques Meugnier est né à Paris le 31 décembre 1951. Pendant ses études, entre 1973 et 1975, il fréquente assidûment le musée du Jeu de Paume au jardin des tuileries où il copie sur place les grands maîtres impressionnistes.</p>
-                    <p>Jacques Meugnier arrive sur la scène parisienne au début des années 80 et obtient un franc succès auprès des galeries et des collectionneurs ainsi qu'auprès des ventes publiques où sa cote, après avoir été en progression constante, s'est stabilisée depuis quelques années à un niveau satisfaisant.</p>
-                    <p>Meugnier peint dans la grande tradition de la peinture française. Sa peinture a maintenant passé les frontières et se trouve dans de nombreuses galeries et chez de nombreux collectionneurs dispersés aux quatre coins du monde.</p>
-                    <p>À ce jour, l'œuvre de Jacques Meugnier comprend un peu plus de 3000 toiles. Entre 1984 et 1994, lors de 45 ventes aux enchères, 150 toiles de Jacques Meugnier ont été dispersées (principalement à l'Hôtel Drouot par l'étude de Maître Robert, ainsi qu'à la Varenne-Saint-Hilaire par Maîtres Teucquam et Lombrail).</p>
-                    <p>Une toile de Jacques Meugnier a été acquise en 1983 par le conservateur du Musée Renoir à Cagnes-Sur-Mer.</p>
-                    <p>Entre 2001 et 2008, 250 toiles de l'artiste ont été dispersées au Japon lors de 13 expositions où l'artiste était présent. Puis entre 2006 et 2017, 6 exposition a la galerie d'Hermance en Suisse.</p>
+        <!-- SECTION BIOGRAPHIE - STRUCTURE MISE À JOUR -->
+        <section id="bio">
+            <div class="container">
+                <h2>Biographie</h2>
+                <div class="bio-content">
+                    <img src="images/artiste.jpg" alt="Photo de Jacques Meugnier dans son atelier" class="bio-photo">
+                    <div class="bio-text">
+                        <p>Jacques Meugnier est né à Paris le 31 décembre 1951. Pendant ses études, entre 1973 et 1975, il fréquente assidûment le musée du Jeu de Paume au jardin des tuileries où il copie sur place les grands maîtres impressionnistes.</p>
+                        <p>Jacques Meugnier arrive sur la scène parisienne au début des années 80 et obtient un franc succès auprès des galeries et des collectionneurs ainsi qu'auprès des ventes publiques où sa cote, après avoir été en progression constante, s'est stabilisée depuis quelques années à un niveau satisfaisant.</p>
+                        <p>Meugnier peint dans la grande tradition de la peinture française. Sa peinture a maintenant passé les frontières et se trouve dans de nombreuses galeries et chez de nombreux collectionneurs dispersés aux quatre coins du monde.</p>
+                        <p>À ce jour, l'œuvre de Jacques Meugnier comprend un peu plus de 3000 toiles. Entre 1984 et 1994, lors de 45 ventes aux enchères, 150 toiles de Jacques Meugnier ont été dispersées (principalement à l'Hôtel Drouot par l'étude de Maître Robert, ainsi qu'à la Varenne-Saint-Hilaire par Maîtres Teucquam et Lombrail).</p>
+                        <p>Une toile de Jacques Meugnier a été acquise en 1983 par le conservateur du Musée Renoir à Cagnes-Sur-Mer.</p>
+                        <p>Entre 2001 et 2008, 250 toiles de l'artiste ont été dispersées au Japon lors de 13 expositions où l'artiste était présent. Puis entre 2006 et 2017, 6 exposition a la galerie d'Hermance en Suisse.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -54,6 +56,7 @@
                 <h2>Galerie</h2>
                 <p class="section-subtitle">Cliquez sur un tableau pour l'agrandir.</p>
                 <div class="gallery-grid">
+                    <!-- ...tous les gallery-item... -->
                     <div class="gallery-item"><img src="images/tableau1.jpg" alt="Description de l'oeuvre 1" class="zoomable"><div class="caption"><h3>La côte de granit rose près de Perros-Guirec</h3><p>2006, Huile sur toile, 27 x 19 cm</p></div></div>
                     <div class="gallery-item"><img src="images/tableau2.jpg" alt="Description de l'oeuvre 2" class="zoomable"><div class="caption"><h3>Printemps à Paris</h3><p>2020, Huile sur toile, 27 x 22 cm</p></div></div>
                     <div class="gallery-item"><img src="images/tableau3.jpg" alt="Description de l'oeuvre 3" class="zoomable"><div class="caption"><h3>La sortie du métro</h3><p>2008, Huile sur toile, 27 x 22 cm</p></div></div>
@@ -82,39 +85,60 @@
             </div>
         </section>
 
-        <!-- SECTION EXPOSITIONS (NOUVELLE PRÉSENTATION COMPACTE) -->
-        <section id="expositions" class="container">
-            <h2>Expositions</h2>
-            <div class="expos-columns">
-                <div class="expo-entry"><span class="expo-date">1979 & 1982</span> <span class="expo-gallery">Galerie des Îles d’Or,</span> <span class="expo-location">Hyères</span></div>
-                <div class="expo-entry"><span class="expo-date">1983</span> <span class="expo-gallery">Galerie Prestige,</span> <span class="expo-location">Annecy</span></div>
-                <div class="expo-entry"><span class="expo-date">1984 & 1990</span> <span class="expo-gallery">Galerie Otto,</span> <span class="expo-location">Vienne</span></div>
-                <div class="expo-entry"><span class="expo-date">1984</span> <span class="expo-gallery">Galerie Arnot,</span> <span class="expo-location">New York</span></div>
-                <div class="expo-entry"><span class="expo-date">1985</span> <span class="expo-gallery">Galerie Dassin,</span> <span class="expo-location">Los Angeles</span></div>
-                <div class="expo-entry"><span class="expo-date">1986</span> <span class="expo-gallery">Galerie des Colonnes,</span> <span class="expo-location">Paris</span></div>
-                <div class="expo-entry"><span class="expo-date">1987</span> <span class="expo-gallery">Galerie Christophe,</span> <span class="expo-location">La Varenne</span></div>
-                <div class="expo-entry"><span class="expo-date">1986 & 2007</span> <span class="expo-gallery">Galerie Ruffin,</span> <span class="expo-location">Versailles</span></div>
-                <div class="expo-entry"><span class="expo-date">1989 & 1998</span> <span class="expo-gallery">Galerie Malé,</span> <span class="expo-location">St-Paul-de-Vence</span></div>
-                <div class="expo-entry"><span class="expo-date">1987 & 2003</span> <span class="expo-gallery">Galerie Castiglione,</span> <span class="expo-location">Paris</span></div>
-                <div class="expo-entry"><span class="expo-date">1989 & 2022</span> <span class="expo-gallery">Le Capricorne,</span> <span class="expo-location">St-Paul-de-Vence</span></div>
-                <div class="expo-entry"><span class="expo-date">1988 & 1990</span> <span class="expo-gallery">Galerie Bouscayrol,</span> <span class="expo-location">Pau/Biarritz</span></div>
-                <div class="expo-entry"><span class="expo-date">1997 & 2001</span> <span class="expo-gallery">Galerie Alpina,</span> <span class="expo-location">Chamonix</span></div>
-                <div class="expo-entry"><span class="expo-date">1998 à 2004</span> <span class="expo-gallery">Galerie Got,</span> <span class="expo-location">Barbizon</span></div>
-                <div class="expo-entry"><span class="expo-date">1998</span> <span class="expo-gallery">Galerie Ritz,</span> <span class="expo-location">Nyon (Suisse)</span></div>
-                <div class="expo-entry"><span class="expo-date">2001 à 2008</span> <span class="expo-gallery">Expositions au Japon,</span></div>
-                <div class="expo-entry"><span class="expo-date">2006 à 2017</span> <span class="expo-gallery">Galerie d’Hermance,</span> <span class="expo-location">Genève</span></div>
+        <!-- SECTION EXPOSITIONS - STRUCTURE MISE À JOUR -->
+        <section id="expositions">
+            <div class="container">
+                <h2>Expositions</h2>
+                <div class="expos-columns">
+                    <div class="expo-entry"><span class="expo-date">1979 & 1982</span> <span class="expo-gallery">Galerie des Îles d’Or,</span> <span class="expo-location">Hyères</span></div>
+                    <div class="expo-entry"><span class="expo-date">1983</span> <span class="expo-gallery">Galerie Prestige,</span> <span class="expo-location">Annecy</span></div>
+                    <div class="expo-entry"><span class="expo-date">1984 & 1990</span> <span class="expo-gallery">Galerie Otto,</span> <span class="expo-location">Vienne</span></div>
+                    <div class="expo-entry"><span class="expo-date">1984</span> <span class="expo-gallery">Galerie Arnot,</span> <span class="expo-location">New York</span></div>
+                    <div class="expo-entry"><span class="expo-date">1985</span> <span class="expo-gallery">Galerie Dassin,</span> <span class="expo-location">Los Angeles</span></div>
+                    <div class="expo-entry"><span class="expo-date">1986</span> <span class="expo-gallery">Galerie des Colonnes,</span> <span class="expo-location">Paris</span></div>
+                    <div class="expo-entry"><span class="expo-date">1987</span> <span class="expo-gallery">Galerie Christophe,</span> <span class="expo-location">La Varenne</span></div>
+                    <div class="expo-entry"><span class="expo-date">1986 & 2007</span> <span class="expo-gallery">Galerie Ruffin,</span> <span class="expo-location">Versailles</span></div>
+                    <div class="expo-entry"><span class="expo-date">1989 & 1998</span> <span class="expo-gallery">Galerie Malé,</span> <span class="expo-location">St-Paul-de-Vence</span></div>
+                    <div class="expo-entry"><span class="expo-date">1987 & 2003</span> <span class="expo-gallery">Galerie Castiglione,</span> <span class="expo-location">Paris</span></div>
+                    <div class="expo-entry"><span class="expo-date">1989 & 2022</span> <span class="expo-gallery">Le Capricorne,</span> <span class="expo-location">St-Paul-de-Vence</span></div>
+                    <div class="expo-entry"><span class="expo-date">1988 & 1990</span> <span class="expo-gallery">Galerie Bouscayrol,</span> <span class="expo-location">Pau/Biarritz</span></div>
+                    <div class="expo-entry"><span class="expo-date">1997 & 2001</span> <span class="expo-gallery">Galerie Alpina,</span> <span class="expo-location">Chamonix</span></div>
+                    <div class="expo-entry"><span class="expo-date">1998 à 2004</span> <span class="expo-gallery">Galerie Got (permanence),</span> <span class="expo-location">Barbizon</span></div>
+                    <div class="expo-entry"><span class="expo-date">1998</span> <span class="expo-gallery">Galerie Ritz,</span> <span class="expo-location">Nyon (Suisse)</span></div>
+                    <div class="expo-entry"><span class="expo-date">2001 à 2008</span> <span class="expo-gallery">Expositions au Japon,</span></div>
+                    <div class="expo-entry"><span class="expo-date">2006 à 2017</span> <span class="expo-gallery">Galerie d’Hermance,</span> <span class="expo-location">Genève</span></div>
+                </div>
             </div>
         </section>
 
-        <!-- SECTION CONTACT -->
-        <section id="contact" class="container">
-            <h2>Me Contacter</h2>
-            <p>Pour toute demande d'information ou pour acquérir une œuvre :</p>
-            <ul class="contact-list">
-                <li>📧 Email : <a href="mailto:jacques.meugnier@proton.me">jacques.meugnier@proton.me</a></li>
-                <li>📞 Téléphone : <a href="tel:+33675418235">06 75 41 82 35</a></li>
-                <li>📍 Atelier : 1 impasse des Promenades, 26110 Nyons </li>
-            </ul>
+        <!-- SECTION ÉCRITURE - STRUCTURE MISE À JOUR -->
+        <section id="ecriture">
+            <div class="container">
+                <h2>Autour de l’impressionnisme</h2>
+                <div class="ecriture-content">
+                    <p>À mes yeux, il n’y a pas d’un côté “les artistes” et de l’autre “les spectateurs”. Nous créons tous sans le savoir, comme nous respirons. Je dirais humblement qu’à la différence, l’artiste “se sent” créer car il engage en principe tout son être et sa peine bien aimée.</p>
+                    <p>J’ai toujours senti que l’élément essentiel dans mon aventure picturale reposait sur l’amour de la nature, cette nature envers laquelle on n’est jamais trop scrupuleux, ni assez sincère en tant que peintre. Pour autant, ce n’est pas devant un beau paysage qu’on se dit “un jour, je serai peintre”, mais c’est plutôt devant un tableau que l’on ressent cet appel.</p>
+                    <p>Si j’ai grandi au sein d’une famille ouverte sur l’art, c’est à Paris, au Musée des impressionnistes, situé à l’époque au Jeu de Paume, que j’ai eu cette révélation. La peinture de paysages exécutée en plein air, sur le motif, s’est véritablement imposée à moi comme un moyen unique d’émouvoir par la magie de la matière et des mélanges subtils de couleurs clairement visibles sur la toile.</p>
+                    <p>Parallèlement à mes études, entre 1974 et 1976, j’effectuais pendant ces deux années, sur autorisation et quelques démarches auprès des musées nationaux, de nombreuses copies de mes maîtres préférés. Passer ainsi des heures au Musée du Jeu de Paume à cinquante centimètres d’un tableau de Monet, de Sisley ou de Pissarro vous prodigue un indicible bonheur et consacre à jamais la naissance d’une passion. Depuis, quarante années après, le parfum de cette fraîche et véridique fleur des débuts est encore très présent en moi.</p>
+                    <p>Si le réalisme impressionniste permet cette rencontre aisée entre l’œuvre et le spectateur, il n’en demeure pas moins que, pour le peintre, la technique à acquérir est très complexe et nécessite un sens aigu des couleurs, de leurs mélanges et surtout de leurs juxtapositions, ce qui demande une très forte intuition et une grande persévérance. Une fois seulement cette technique “maîtrisée”, l’artiste peut donner libre cours à sa sensibilité.</p>
+                    <p>Lorsque je pars peindre sur le motif, je suis dans un état de réceptivité intense. Mes forces me paraissent toujours insuffisantes face à ce qui va venir. J’ai besoin de m’arrêter quelques instants pour rassembler ma personne, sentir toutes les rumeurs éparses, tous les chuchotements venus du fond de moi-même et qui vibrent en moi comme une réponse à mes inquiétudes. Et puis lentement s’établit la rencontre. Un petit coin de nature vous parle, vous sourit…</p>
+                    <p>Si le peintre demeure seul face au monde et à lui-même, sa toile n’est-elle pas le “passage” vers ce regard de l’autre qui saura un jour le rejoindre ?</p>
+                    <p>Quel bonheur de pouvoir encore regarder le ciel, jouir de ces inestimables biens que sont toutes les fleurs des champs, les ruisseaux, les nuages qui passent au-dessus des grands arbres, et toutes ces choses éphémères comme le coquelicot d’un jour que chaque saison voit renaître. Ces biens-là, les aurons-nous assez admirés ? Aurons-nous pleinement goûté ce qu’ont d’émouvant l’aube qui pointe et la journée que l’on ne reverra plus pour en fixer sur la toile le sentiment profond et éternel ?</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION CONTACT - STRUCTURE MISE À JOUR -->
+        <section id="contact">
+            <div class="container">
+                <h2>Me Contacter</h2>
+                <p>Pour toute demande d'information ou pour acquérir une œuvre :</p>
+                <ul class="contact-list">
+                    <li>📧 Email : <a href="mailto:jacques.meugnier@proton.me">jacques.meugnier@proton.me</a></li>
+                    <li>📞 Téléphone : <a href="tel:+33675418235">06 75 41 82 35</a></li>
+                    <li>📍 Atelier : 1 impasse des Promenades, 26110 Nyons </li>
+                </ul>
+            </div>
         </section>
     </main>
 
